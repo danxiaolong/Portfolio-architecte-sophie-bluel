@@ -54,6 +54,9 @@ body {
 	font-size: 14px;
 	/*ajoute la couleur du background*/
 	background-color: #FFFEF8;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 header {
 	display: flex;
@@ -218,3 +221,79 @@ footer nav ul {
 	background-color: #1D6154;
 	color: #FFFFFF;
 }
+
+/*ici j'ai ajouter le hoover qui change la couleur sur mon lien a*/
+header li:hover, header a:hover {
+	color: #B1663C;
+}
+/*ici j'ai fait en sorte que la barre en dessous du lien disparaisse*/
+li a {
+	text-decoration: none;
+	color: black;
+}
+/*pour que le lien selectionner soit en gras sur la page*/
+.activelink {
+	font-weight: 600;
+}
+
+
+
+/*login*/
+
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.loginformulaire {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+.login h1 {
+	font-family: 'Syne';
+	font-weight: 700;
+	color: #1D6154;
+	font-size: 30px;
+	margin-bottom: 37px;
+}
+.loginformulaire label {
+	color: #3D3D3D;
+	font-family: "Work Sans";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 7px;
+}
+
+.loginformulaire input {
+	width: 379px;
+    height: 51px;
+	background: #FFF;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+	margin-bottom: 30px;
+	border: none;
+	
+}
+.loginformulaire .boutonConnexion {
+	border-radius: 60px;
+    background: #1D6154;
+	width: 179px;
+    height: 36px;
+	color: #FFF;
+	text-align: center;
+	font-family: Syne;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	align-self: center;
+	border: none;
+	
+}
+
