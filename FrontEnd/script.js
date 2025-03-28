@@ -55,5 +55,30 @@ async function createGalerryCategories() {
     }
 }
 
-createGalerryCategories()
-createWorksGallery() 
+function logout () {
+    // ici j'enleve la clase close à l'indicateur du mode edition
+    let indicateurEdition = document.querySelector(".indicateurEdition")
+    indicateurEdition.classList.remove("close")
+    let loginLogoutEmplacement = document.getElementById("loginLogout")
+    loginLogoutEmplacement.textContent = "Logout"
+    loginLogoutEmplacement.addEventListener("click", (event) => {
+        event.preventDefault()
+        sessionStorage.removeItem("token")
+        window.location.href = "index.html"
+
+    })
+}
+
+
+
+createWorksGallery()
+//si il n'y à pas de token donc pas connecter je créer les filtres
+if (!sessionStorage.getItem("token")) {
+    createGalerryCategories()
+    
+} else {
+    logout()
+    
+}
+
+

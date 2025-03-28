@@ -1,7 +1,5 @@
 let formulaireLogin = document.querySelector(".loginformulaire")
 
-let connexionStatut = false
-
 
 formulaireLogin.addEventListener("submit", async function (event) {
     event.preventDefault()
@@ -22,8 +20,6 @@ formulaireLogin.addEventListener("submit", async function (event) {
             const reponseLog = await response.json()
             console.log("Connexion réussie ")
             sessionStorage.setItem("token", reponseLog.token)
-            connexionStatut = true
-            sessionStorage.setItem("connexionStatut", JSON.stringify(connexionStatut))
             window.location.href = "index.html"
         } else {
         let messageErreurConnexionP = document.querySelector(".msgErreurConnexion")

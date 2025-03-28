@@ -320,3 +320,37 @@ li a {
 .cacherMsgErreur {
 	display: none;
 }
+
+.fa-trash-can-style {
+	color: #FFF;
+	font-size: 12px;
+	/*je suis pas sur du tous de comment faire ici quand je met les info figma sa fait pas centrer alors que j'ai bien centrer avec flex
+	width: 9px;
+	height: 11px;
+	flex-shrink: 0;*/
+}
+
+.indicateurEdition {
+	display: flex;
+	max-width: none;
+	width: 100%;
+	height: 59px;
+	justify-content: center;
+	background-color: #000;
+}
+
+.indicateurEditionP {
+	padding-top: 19.5px;
+	padding-bottom: 20.5px;
+	color: #FFF;
+	text-align: center;
+	font-family: "Work Sans";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.close {
+	display: none;
+}
