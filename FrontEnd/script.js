@@ -56,9 +56,11 @@ async function createGalerryCategories() {
 }
 
 function logout () {
-    // ici j'enleve la clase close à l'indicateur du mode edition
+    // ici j'enleve la clase close à l'indicateur du mode edition et le bouton modifier pour l'ouverture de la modal de modification
     let indicateurEdition = document.querySelector(".indicateurEdition")
     indicateurEdition.classList.remove("close")
+    let boutonModalModifier = document.getElementById("boutonModalModifier")
+    boutonModalModifier.classList.remove("close")
     let loginLogoutEmplacement = document.getElementById("loginLogout")
     loginLogoutEmplacement.textContent = "Logout"
     loginLogoutEmplacement.addEventListener("click", (event) => {
