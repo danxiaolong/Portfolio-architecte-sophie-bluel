@@ -39,15 +39,20 @@
 	<section>
 		<div class="login">
 			<h1>Log In</h1>
+            <div id="msgErreurConnexion">
+
+            </div>
+            
 			<form class="loginformulaire"   method="post">
 				<label for="email" >E-mail</label>
 				<input id="email" type="email" name="email" required autofocus>
 				<label for="mdp">Mot de passe</label>
 				<input id="mdp" type="password" name="mdp" required>
+                <p class="msgErreurConnexion cacherMsgErreur">E-mail ou Mot de passe incorrectes</p>
 				<input class="boutonConnexion" type="submit" value="Se connecter">
 				<!--je suis pas sur si faut utiliser input ou button je crois plutot button-->
 			</form>
-
+            <a href="">Mot de passe oublié</a>
 		</div>
 	</section>
 </main>

@@ -297,3 +297,26 @@ li a {
 	
 }
 
+.login a {
+	color: #3D3D3D;
+	font-family: "Work Sans";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-skip-ink: none;
+	text-decoration-thickness: auto;
+	text-underline-offset: auto;
+	text-underline-position: from-font;
+}
+
+.msgErreurConnexion {
+	color: red;
+	align-self: center;
+}
+
+.cacherMsgErreur {
+	display: none;
+}
