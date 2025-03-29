@@ -356,7 +356,15 @@ li a {
 }
 
 /*bouton modifier */
-#portfolio a {
+
+.styleIconModifier {
+	all: initial;
+	width: 15.58px;
+	height: 15.58px;
+	color: #000;
+}
+
+#portfolio span a {
 	text-decoration: none;
 	color: #000;
 	text-align: center;
@@ -367,3 +375,172 @@ li a {
 	font-weight: 400;
 	line-height: normal;
 }
+
+/*modal*/
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+
+.close {
+	display: none !important;
+}
+
+.wrapperModal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 630px;
+	height: auto;
+	background-color: #FFF;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 26px;
+	padding-bottom: 45px;
+	gap: 67.3px;
+
+	
+
+}
+
+
+.wrapperTitreGalerie {
+	display: flex;
+	flex-direction: column;
+}
+
+/*image dans la modale galerie*/
+
+.divWorksStyle {
+	width: 420px;
+	align-self: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 6.23px;
+	grid-row-gap: 25.47px;
+	margin-bottom: 67px;
+}
+
+.workFigureStyle {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	width: 78.123px;
+    height: 104.08px;
+	position: relative;
+    display: inline-block; 
+
+}
+
+.imgGalerie {
+	width: 78.123px;
+    height: 104.08px;
+}
+
+
+
+.boutonEffacerAStyle {
+	display: flex;
+    background-color: #000;
+    border: solid 1px black;
+	border-radius: 3px;
+	position: absolute;
+    top: 5px; 
+    right: 5px;
+	justify-content: center;
+	align-items: center;
+	width: 17px;
+    height: 17px;
+
+}
+	
+
+.fa-trash-can-style {
+	font-size: 12px;
+	color: #FFF;
+}
+
+
+
+#boutonFermetureModal {
+	align-self: flex-end;
+	margin-right: 30px;
+	margin-bottom: 10px;
+	width: 24px;
+	height: 24px;
+	
+}
+
+.wrapperModal h1 {
+	color: #000;
+	align-self: center;
+	font-family: "Work Sans";
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 41.46px;
+}
+
+.wrapperBoutonBarre {
+	justify-content: flex-end;
+	display: flex;
+	flex-direction: column;
+	gap: 38px;
+	align-items: center;
+}
+
+.barreDeco {
+	width: 420px;
+	height: 1px;
+	background: #B3B3B3;
+}
+
+.boutonAjouterPhoto {
+	color: #FFF;
+	text-align: center;
+	font-family: Syne;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	border-radius: 60px;
+	background: #1D6154;
+	width: 237px;
+	height: 36px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*********************************************************/
+/* à partir d'ici je ne suis plus sur de rien */
+/********************************************************/
+.wrapperModal2 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 630px;
+	height: auto;
+	background-color: #FFF;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	padding: 26px 30px 56px 30px;
+	border: 5px solid green;
+	align-items: center;
+	
+
+} 
+

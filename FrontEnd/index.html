@@ -52,7 +52,80 @@
 			</article>
 		</section>
 		<section id="portfolio">
-			<h2>Mes Projets <a href="#modalModification" id="boutonModalModifier" class="close"><i class="fa-regular fa-pen-to-square modal"></i> modifier</a></h2>
+			<h2>
+				Mes Projets 
+				<span>
+					
+					<a href="#modalModification" id="boutonModalModifier" class="close">
+						<i class="fa-regular fa-pen-to-square styleIconModifier"></i> modifier
+					</a>
+				</span>
+			</h2>
+			<div class="modalOverlay close"></div>
+
+
+			<div class="wrapperModal close">
+				<div class="wrapperTitreGalerie">
+					<a id="boutonFermetureModal">
+					<i class="fa-solid fa-xmark"></i>
+					</a>
+					<h1>
+						Galerie Photo
+					</h1>
+					<div class="divWorksStyle"></div>
+					
+				</div>
+				<div class="wrapperBoutonBarre">
+					<span class="barreDeco"></span>
+					<a id="boutonAjouterPhoto" class="boutonAjouterPhoto">Ajouter une photo
+					</a>
+
+				</div>	
+				
+			</div>
+			<div class="wrapperModal2 close">
+				<div class="boutonNavModal2">
+					<a id="boutonRetourModal2">
+						<i class="fa-solid fa-arrow-left"></i>
+					</a>
+					<a id="boutonFermetureModal2">
+						<i class="fa-solid fa-xmark"></i>
+					</a>
+				</div>
+				<div class="formulaireAjoutPhoto">
+					<label for="ajoutPhoto">Ajout Photo</label>
+					
+					<div class="photoInputWrapper">
+						<i class="fa-regular fa-image fa-regular-style"></i>
+						<input type="file" id="ajoutPhoto" name="ajoutPhoto" accept="image/png, image/jpeg" placeholder="" class=""/>
+						<button type="button" id="boutonInputFactice">+ Ajouter Photo</button>
+						<p class="textAjoutPhoto">jpg, png : 4mo max</p>
+					</div>
+					<div class="photoInputPreview close">
+						
+
+					</div>
+					<div class="titreInputWrapper">
+					<label class="styleInputTitre" for="">Titre</label>
+					<input type="text">
+					</div>
+					<div class="categoryInputWrapper">
+						<label class="styleInputCategory" for="">Catégorie</label>
+						<select id="filtres" name="filtres">
+						</select>
+					</div>
+					
+					
+				</div>
+				<div class="wrapperValider">
+						<span class="barreDeco"></span>
+						<a id="boutonAjouterPhoto" class="boutonAjouterPhoto">Valider
+						</a>
+	
+					</div>	
+
+			</div>
+			
 			<div class="CategoryButtons"></div>
 			<div class="gallery">
 				
